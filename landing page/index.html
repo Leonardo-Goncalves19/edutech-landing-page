@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A melhor plataforma de cursos online para alavancar a sua carreira.">
-    <title>EduTech - Cursos Online Profissionais</title>
+    <meta name="description" content="EduTech - A melhor plataforma de cursos online para alavancar a sua carreira em tecnologia e design.">
+    <meta property="og:title" content="EduTech - Cursos Online Profissionais">
+    <meta property="og:description" content="Transforme a sua carreira com conhecimento real. Cursos de Programação, Design e Marketing.">
+    <meta property="og:type" content="website">
+    <title>EduTech - Evolua a sua Carreira</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
@@ -15,20 +18,23 @@
     <header class="header" id="header">
         <nav class="container nav-container">
             <a href="#" class="logo">Edu<span>Tech</span>.</a>
-            
+
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#home" class="nav-link active-link">Início</a></li>
                     <li><a href="#cursos" class="nav-link">Cursos</a></li>
                     <li><a href="#faq" class="nav-link">Dúvidas</a></li>
                 </ul>
                 <div class="nav-close" id="nav-close">
                     <i class="ph ph-x"></i>
                 </div>
+                <div class="nav-mobile-btns">
+                    <a href="#" class="btn btn-outline full-width">Entrar</a>
+                </div>
             </div>
 
-            <div class="nav-btns">
-                <a href="#" class="btn btn-outline">Entrar</a>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline desktop-only">Entrar</a>
                 <a href="#cursos" class="btn btn-primary">Começar</a>
                 <div class="nav-toggle" id="nav-toggle">
                     <i class="ph ph-list"></i>
@@ -39,34 +45,46 @@
 
     <main>
         <section class="hero section" id="home">
+            <div class="hero-bg-decoration"></div>
             <div class="container hero-container">
                 <div class="hero-content fade-in">
-                    <span class="badge">Novo: Curso de IA Generativa</span>
-                    <h1>Transforme a sua carreira com conhecimento real.</h1>
-                    <p>Aprenda com especialistas da indústria. Cursos práticos, projetos reais e certificados reconhecidos no mercado europeu.</p>
+                    <span class="badge">
+                        <i class="ph ph-sparkle"></i> Novo: IA Generativa
+                    </span>
+                    <h1>Transforme o seu futuro com <span class="text-gradient">conhecimento real.</span></h1>
+                    <p>Aprenda com especialistas da indústria. Cursos práticos, projetos reais e certificados válidos no mercado global.</p>
+                    
                     <div class="hero-buttons">
                         <a href="#cursos" class="btn btn-primary">Ver Cursos</a>
-                        <a href="#" class="btn btn-text">Saber mais <i class="ph ph-arrow-right"></i></a>
+                        <a href="#faq" class="btn btn-text">Saber mais <i class="ph ph-arrow-right"></i></a>
                     </div>
                     
                     <div class="stats">
                         <div class="stat-item">
                             <h3>10k+</h3>
-                            <p>Alunos</p>
+                            <p>Alunos Ativos</p>
                         </div>
                         <div class="stat-item">
                             <h3>50+</h3>
-                            <p>Cursos</p>
+                            <p>Cursos Novos</p>
                         </div>
                         <div class="stat-item">
                             <h3>4.9</h3>
-                            <p>Avaliação</p>
+                            <p>Classificação</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="hero-image fade-in">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estudantes a colaborar">
+                <div class="hero-image-wrapper fade-in">
+                    <div class="image-decoration"></div>
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Estudantes a colaborar em projeto tecnológico" class="hero-img">
+                    <div class="floating-card top">
+                        <i class="ph-fill ph-check-circle"></i>
+                        <div>
+                            <span>Certificado</span>
+                            <strong>Garantido</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -74,61 +92,62 @@
         <section class="courses section" id="cursos">
             <div class="container">
                 <div class="section-header fade-in">
-                    <h2>Os Nossos Cursos Populares</h2>
-                    <p>Escolha o percurso ideal para o seu futuro.</p>
+                    <span class="subtitle">Educação de Ponta</span>
+                    <h2>Cursos em Destaque</h2>
+                    <p>Escolha o percurso ideal para escalar a sua carreira profissional.</p>
                 </div>
 
                 <div class="course-grid">
                     <article class="course-card fade-in">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Curso de Programação">
+                            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="Curso de Programação" loading="lazy">
                             <span class="tag">Tecnologia</span>
                         </div>
                         <div class="card-content">
                             <div class="card-rating">
-                                <i class="ph-fill ph-star"></i> 4.9 (1.2k)
+                                <i class="ph-fill ph-star"></i> 4.9 (1.2k avaliações)
                             </div>
                             <h3>Fullstack Developer Masterclass</h3>
-                            <p>Do zero ao profissional em 6 meses.</p>
+                            <p>Do zero ao profissional. Domine React, Node.js e bases de dados em 6 meses.</p>
                             <div class="card-footer">
                                 <span class="price">197,00 €</span>
-                                <button class="btn-icon"><i class="ph ph-arrow-right"></i></button>
+                                <button class="btn-icon" aria-label="Ver detalhes"><i class="ph ph-arrow-right"></i></button>
                             </div>
                         </div>
                     </article>
 
                     <article class="course-card fade-in">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1560472324-4c130a96605e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Curso de Design">
+                            <img src="https://images.unsplash.com/photo-1560472324-4c130a96605e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="Curso de Design" loading="lazy">
                             <span class="tag">Design</span>
                         </div>
                         <div class="card-content">
                             <div class="card-rating">
-                                <i class="ph-fill ph-star"></i> 4.8 (850)
+                                <i class="ph-fill ph-star"></i> 4.8 (850 avaliações)
                             </div>
                             <h3>UI/UX Design Avançado</h3>
-                            <p>Crie interfaces modernas e funcionais.</p>
+                            <p>Crie interfaces modernas, protótipos interativos e melhore a experiência do utilizador.</p>
                             <div class="card-footer">
                                 <span class="price">147,00 €</span>
-                                <button class="btn-icon"><i class="ph ph-arrow-right"></i></button>
+                                <button class="btn-icon" aria-label="Ver detalhes"><i class="ph ph-arrow-right"></i></button>
                             </div>
                         </div>
                     </article>
 
                     <article class="course-card fade-in">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Curso de Marketing">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60" alt="Curso de Marketing" loading="lazy">
                             <span class="tag">Marketing</span>
                         </div>
                         <div class="card-content">
                             <div class="card-rating">
-                                <i class="ph-fill ph-star"></i> 4.7 (500)
+                                <i class="ph-fill ph-star"></i> 4.7 (500 avaliações)
                             </div>
                             <h3>Marketing Digital 360</h3>
-                            <p>Estratégias de crescimento e redes sociais.</p>
+                            <p>Estratégias de crescimento, SEO, tráfego pago e gestão de redes sociais.</p>
                             <div class="card-footer">
                                 <span class="price">127,00 €</span>
-                                <button class="btn-icon"><i class="ph ph-arrow-right"></i></button>
+                                <button class="btn-icon" aria-label="Ver detalhes"><i class="ph ph-arrow-right"></i></button>
                             </div>
                         </div>
                     </article>
@@ -139,38 +158,45 @@
         <section class="faq section" id="faq">
             <div class="container faq-container">
                 <div class="section-header fade-in">
+                    <span class="subtitle">Suporte</span>
                     <h2>Perguntas Frequentes</h2>
-                    <p>Tire as suas dúvidas sobre a plataforma.</p>
+                    <p>Tudo o que precisa de saber para começar a estudar hoje.</p>
                 </div>
 
                 <div class="accordion fade-in">
                     <div class="accordion-item">
                         <button class="accordion-header">
-                            Os cursos têm certificado?
+                            <span>Os cursos têm certificado reconhecido?</span>
                             <i class="ph ph-caret-down"></i>
                         </button>
                         <div class="accordion-content">
-                            <p>Sim! Todos os nossos cursos oferecem certificado digital de conclusão válido.</p>
+                            <div class="accordion-body">
+                                Sim! Todos os nossos cursos oferecem certificado digital de conclusão com código de verificação, válido para adicionar ao LinkedIn e currículo.
+                            </div>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <button class="accordion-header">
-                            Por quanto tempo tenho acesso?
+                            <span>Por quanto tempo tenho acesso às aulas?</span>
                             <i class="ph ph-caret-down"></i>
                         </button>
                         <div class="accordion-content">
-                            <p>O acesso é vitalício. Uma vez comprado o curso, pode assistir às aulas quando e onde quiser, para sempre.</p>
+                            <div class="accordion-body">
+                                O acesso é vitalício. Uma vez comprado o curso, pode assistir às aulas quando e onde quiser, incluindo atualizações futuras do conteúdo.
+                            </div>
                         </div>
                     </div>
 
                     <div class="accordion-item">
                         <button class="accordion-header">
-                            Existe garantia de reembolso?
+                            <span>Existe garantia de reembolso?</span>
                             <i class="ph ph-caret-down"></i>
                         </button>
                         <div class="accordion-content">
-                            <p>Oferecemos 14 dias de garantia incondicional. Se não gostar, devolvemos 100% do seu dinheiro.</p>
+                            <div class="accordion-body">
+                                Sim. Oferecemos 14 dias de garantia incondicional. Se o conteúdo não corresponder às suas expectativas, devolvemos 100% do seu investimento sem perguntas.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -182,34 +208,31 @@
         <div class="container footer-container">
             <div class="footer-brand">
                 <a href="#" class="logo">Edu<span>Tech</span>.</a>
-                <p>A democratizar o ensino de tecnologia e negócios em Portugal.</p>
+                <p>A democratizar o ensino de tecnologia e negócios. Aprenda hoje as competências de amanhã.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+                </div>
             </div>
             
             <div class="footer-links">
                 <h4>Plataforma</h4>
                 <ul>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Mentores</a></li>
-                    <li><a href="#">Empresas</a></li>
+                    <li><a href="#cursos">Todos os Cursos</a></li>
+                    <li><a href="#">Mentoria</a></li>
+                    <li><a href="#">Para Empresas</a></li>
+                    <li><a href="#">Carreiras</a></li>
                 </ul>
             </div>
 
             <div class="footer-links">
                 <h4>Legal</h4>
                 <ul>
-                    <li><a href="#">Termos</a></li>
-                    <li><a href="#">Privacidade</a></li>
-                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Livro de Reclamações</a></li>
                 </ul>
-            </div>
-
-            <div class="footer-social">
-                <h4>Social</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
-                    <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-                    <a href="#"><i class="ph ph-youtube-logo"></i></a>
-                </div>
             </div>
         </div>
         <div class="footer-bottom container">
